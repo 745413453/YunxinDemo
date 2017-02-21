@@ -38,7 +38,7 @@ public class SqlTestServiceImpl implements SqlTestService {
 
     @Override
     public String update() {
-        String sql = "INSERT INTO CA_MainOrder VALUES(?,?,?,?,?,?)";
+        String sql = "INSERT INTO CA_MainOrder VALUES(?,?,?,?,?,?) ";
         KeyHolder holder = new GeneratedKeyHolder();
         jdbcTemplate.update(new PreparedStatementCreator() {
             @Override
